@@ -1,0 +1,7 @@
+{
+  "name": "stopsmoking",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
