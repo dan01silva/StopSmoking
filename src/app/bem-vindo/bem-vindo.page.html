@@ -1,9 +1,22 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>bemVindo</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="ion-padding" color="medium">
 
-<ion-content>
+  <ion-card color="light" class="ion-padding">
+    <ion-row class="ion-align-self-center">
+      <h3 class="tituloH3">Bem vindo ao Stop Smoking</h3>
+    </ion-row>
+  </ion-card>
+
+  <div class="form">
+    <form class="ion-padding" color="tertiary">
+      <ion-item spellcheck="true">
+        <ion-label fl></ion-label>
+        <ion-input placeholder="Digite seu nome" type="text" [(ngModel)]="nomeuser" name="nome"></ion-input>
+      </ion-item>
+      <!-- vai ter um href nesse btn -->
+      <ion-button type="subcmit" shape="round"block>Continuar</ion-button>
+    </form>
+  </div>
+
+  <h1> Testando Salvamento da variável:    {{user.nome}} ||||| {{nomeuser}} </h1>
 
 </ion-content>
