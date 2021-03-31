@@ -1,9 +1,29 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>form02</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="ion-padding" color="Warning">
 
-<ion-content>
+  <ion-card color="light" class="ion-padding">
+    <ion-row class="ion-align-self-center">
+      <h3 class="tituloH3">Só precisaremos de mais 3 informações.</h3>
+    </ion-row>
+  </ion-card>
 
+  <div class="form">
+    <form class="ion-padding" color="tertiary">
+      <ion-item spellcheck="true" class="ion-padding-top">
+        <ion-label fl></ion-label>
+        <ion-input placeholder="Quantos cigarros você fuma por dia?" type="text" [(ngModel)]="qntdcig" name="idade"></ion-input>
+      </ion-item>
+      <ion-item spellcheck="true" class="ion-padding-top">
+        <ion-label f2></ion-label>
+        <ion-input placeholder="Qual o valor do seu maço de cigarro?" type="text" [(ngModel)]="valcig" name="genero"></ion-input>
+      </ion-item>
+      <ion-item spellcheck="true" class="ion-padding-top">
+        <ion-label f3></ion-label>
+        <ion-input placeholder="Quantos cigarros vem no maço?" type="text" [(ngModel)]="qntdcigma" name="genero"></ion-input>
+      </ion-item>
+      <!-- vai ter um href nesse btn -->
+      <div id="btnhome">
+        <ion-button href="http://localhost:8100/bem-vindo" type="subcmit" shape="round"block>Continuar</ion-button>
+      </div>
+    </form>
+  </div>
 </ion-content>
