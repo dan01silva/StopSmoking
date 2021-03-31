@@ -1,9 +1,29 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>form01</ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content class="ion-padding" color="Warning">
 
-<ion-content>
+  <ion-card color="light" class="ion-padding">
+    <ion-row class="ion-align-self-center">
+      <h3 class="tituloH3">Precisamos que você insira algumas informações abaixo.</h3>
+    </ion-row>
+  </ion-card>
 
+  <div class="form">
+    <form class="ion-padding" color="tertiary">
+      <ion-item spellcheck="true" class="ion-padding-top">
+        <ion-label fl></ion-label>
+        <ion-input placeholder="Qual a sua idade?" type="text" [(ngModel)]="idadeuser" name="idade"></ion-input>
+      </ion-item>
+      <ion-item spellcheck="true" class="ion-padding-top">
+        <ion-label f2></ion-label>
+        <ion-input placeholder="Qual seu gênero?" type="text" [(ngModel)]="genuser" name="genero"></ion-input>
+      </ion-item>
+      <ion-item spellcheck="true" class="ion-padding-top">
+        <ion-label f3></ion-label>
+        <ion-input placeholder="Qual sua cidade?" type="text" [(ngModel)]="cityuser" name="genero"></ion-input>
+      </ion-item>
+      <!-- vai ter um href nesse btn -->
+      <div id="btnhome">
+        <ion-button class="btnhome" href="http://localhost:8101/form02" type="subcmit" shape="round"block>Continuar</ion-button>
+      </div> 
+    </form>
+  </div>
 </ion-content>
