@@ -9,19 +9,50 @@
   <div class="form">
     <form class="ion-padding" color="tertiary">
       <ion-item spellcheck="true" class="ion-padding-top">
-        <ion-label fl></ion-label>
-        <ion-input placeholder="Qual a sua idade?" type="text" [(ngModel)]="idadeuser" name="idade"></ion-input>
-      </ion-item>
+        <ion-label color="medium">Data de nascimento</ion-label>
+        <ion-input placeholder="Insira sua data de nascimento" type="date" min="1920-01-01" max="2021-01-01" [(ngModel)]="idadeuser" name="idade"></ion-input>
+        </ion-item>
+
       <ion-item spellcheck="true" class="ion-padding-top">
-        <ion-label f2></ion-label>
-        <ion-input placeholder="Qual seu gênero?" type="text" [(ngModel)]="genuser" name="genero"></ion-input>
+        <ion-label color="medium">Insira seu gênero</ion-label>
+        <ion-select value="brown" okText="Continuar" cancelText="Desfazer">
+          <ion-select-option value="F">Feminino</ion-select-option>
+          <ion-select-option value="M">Masculino</ion-select-option>
+          <ion-select-option value="NaoAplica">Não se aplica</ion-select-option>
+        </ion-select>
       </ion-item>
+
+
       <ion-item spellcheck="true" class="ion-padding-top">
-        <ion-label f3></ion-label>
-        <ion-input placeholder="Qual sua cidade?" type="text" [(ngModel)]="cityuser" name="genero"></ion-input>
+        <ion-label color="medium">Insira seu estado</ion-label>
+        <ion-select value="brown" okText="Continuar" cancelText="Desfazer">
+          <ion-select-option value="Aracaju">AC</ion-select-option>
+          <ion-select-option value="Belem">AL</ion-select-option>
+          <ion-select-option value="BeloHorizone">AP</ion-select-option>
+          <ion-select-option value="BoaVista">AM</ion-select-option>
+          <ion-select-option value="Brasilia">BA</ion-select-option>
+          <ion-select-option value="CampoGrande">CE</ion-select-option>
+          <ion-select-option value="Cuiaba">ES</ion-select-option>
+          <ion-select-option value="Curitiba">GO</ion-select-option>
+          <ion-select-option value="Florianopolis">MA</ion-select-option>
+          <ion-select-option value="Fortaleza">MT</ion-select-option>
+          <ion-select-option value="Goiania">MS</ion-select-option>
+          <ion-select-option value="JoaoPessoa">MG</ion-select-option>
+          <ion-select-option value="Macapa">PA</ion-select-option>
+          <ion-select-option value="Manaus">PB</ion-select-option>
+          <ion-select-option value="Natal">PR</ion-select-option>
+          <ion-select-option value="Palmas">PE</ion-select-option>
+          <ion-select-option value="PortoAlegre">PI</ion-select-option>
+          <ion-select-option value="PortoVelho">RJ</ion-select-option>
+          <ion-select-option value="Recife">RS</ion-select-option>
+          <ion-select-option value="RioBranco">RO</ion-select-option>
+          <ion-select-option value="Salvador">SC</ion-select-option>
+          <ion-select-option value="SaoLuis">SP</ion-select-option>
+          <ion-select-option value="SaoPaulo">SE</ion-select-option>
+          <ion-select-option value="Teresina">TO</ion-select-option>
+          <ion-select-option value="Vitoria">DF</ion-select-option>
+        </ion-select>
       </ion-item>
-      <!-- vai ter um href nesse btn -->
-      
     </form>
     <div id="btnhome">
       <ion-button href="http://localhost:8100/form02"  shape="round"outline>Continuar</ion-button>
