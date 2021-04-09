@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>homePerfil</ion-title>
+    <ion-title class="ion-text-center">Stop Smoking!</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -14,9 +14,19 @@
 </div>
 
 
-<ion-button expand="full">Dicas de Saúde</ion-button>
-<ion-icon name="heart"></ion-icon>
-<ion-button expand="full">Depoimentos</ion-button>
+
+<ion-button href="http://localhost:8100/dicas-saude" expand="full">
+  <ion-icon slot="start" name="heart"></ion-icon>
+  Dicas de Saúde
+</ion-button>
+<ion-button href="http://localhost:8100/depoimentos" expand="full">
+  <ion-icon slot="start" name="receipt-sharp"></ion-icon>
+  Depoimentos
+</ion-button>
+<ion-button href="http://localhost:8100/conquistas" expand="full">
+  <ion-icon name="trophy"></ion-icon>
+  Conquistas
+</ion-button>
 
 <ion-content>
 
