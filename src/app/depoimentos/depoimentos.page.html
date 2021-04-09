@@ -1,18 +1,26 @@
-<link rel="stylesheet" href="depoimentos.page.scss">
-<ion-content>
-  <div id="backgroundFumo">
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Depoimentos</ion-title>
+  </ion-toolbar>
+</ion-header>
 
-    <div id="avtdepts">
-      <ion-card color="medium" class="daily-scenary-card" class="ion-activatable ripple-parent">
-        <ion-avatar>
-          <img
-            src='https://images.pexels.com/photos/276064/pexels-photo-276064.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500' />
-          <p>Filipe Venâncio</p> <br>
-        </ion-avatar>
-        <!-- {{ depoiments}} -->
-        <p> TESTE DEPOIMENTO </p>
-      </ion-card>
-    </div>
-
-  </div>
+<ion-content class="tutorial-page">
+<!-- Colocar imagem por avatares  -->
+  <ion-slides pager>
+    <ion-slide *ngFor="let slide of slides">
+      <img [src]="slide.image"  class="slide-image" />
+      <h2 class="slide-title" [innerHTML]="slide.titulo"></h2>
+      <p [innerHTML]="slide.description"></p>
+    </ion-slide>
+    <ion-slide>
+      <ion-toolbar>
+      </ion-toolbar>
+      <img src="assets/img/ica-slidebox-img-4.png" class="slide-image" />
+      <h2 class="slide-title">Ready to Play?</h2>
+      <button ion-button large clear icon-end color="primary">
+        Continue
+        <ion-icon name="arrow-forward"></ion-icon>
+      </button>
+    </ion-slide>
+  </ion-slides>
 </ion-content>
