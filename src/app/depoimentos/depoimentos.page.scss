@@ -1,0 +1,32 @@
+#depoimentos .conteiner {
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+    max-width: 1180px;
+    margin: 50px auto 15px;
+}
+
+#depoimentos .flexslider {
+    margin-top: 40px;
+}
+
+#depoimentos .avatar {
+    width: 100px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+#depoimentos blockquote {
+    border-left: none;
+}
+
+#depoimentos blockquote p {
+    margin-bottom: 20px;
+}
+
+#depoimentos blockquote cite::before {
+    content: '\2014 \0020';
+}

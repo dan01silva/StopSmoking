@@ -6,7 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./depoimentos.page.scss'],
 })
 export class DepoimentosPage implements OnInit {
+  public depoimentos;
+  
+  public user = {
+    nome: ' ',
 
+  };
   constructor() { }
 
   ngOnInit() {
