@@ -5,17 +5,19 @@
 </ion-header>
 
 <ion-content class="tutorial-page">
-<!-- Colocar imagem por avatares  -->
   <ion-slides pager>
     <ion-slide *ngFor="let slide of slides">
-      <img [src]="slide.image"  class="slide-image" />
-      <h2 class="slide-title" [innerHTML]="slide.titulo"></h2>
-      <p [innerHTML]="slide.description"></p>
+
+      <ion-icon name="person-outline" class="ion-padding-top"></ion-icon>
+      <h4 [innerHTML]="slide.titulo" class="slide-title"></h4>
+      <p [innerHTML]="slide.depoimento"></p>
     </ion-slide>
     <ion-slide>
       <ion-toolbar>
+        Não sei oq colocar aqui
       </ion-toolbar>
-      <img src="assets/img/ica-slidebox-img-4.png" class="slide-image" />
+      <img
+        src="https://images.pexels.com/photos/5640581/pexels-photo-5640581.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" />
       <h2 class="slide-title">Ready to Play?</h2>
       <button ion-button large clear icon-end color="primary">
         Continue

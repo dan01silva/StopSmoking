@@ -10,23 +10,23 @@ export class DepoimentosPage implements OnInit {
   slides = [
     {
       titulo: "Welcome to the Docs!",
-      description: "The <b> Ionic Component Documentation</b> showcases a number of useful components that are included out of the box with Ionic.",
-      image: "https://images.pexels.com/photos/697509/pexels-photo-697509.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      depoimento: "The <b> Ionic Component Documentation</b> showcases a number of useful components that are included out of the box with Ionic.",
+      imgAvt: "https://images.pexels.com/photos/697509/pexels-photo-697509.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
     },
     {
       titulo: "What is Ionic?",
-      description: "<b>Ionic Framework</b> is an open source SDK that enables developers to build high quality mobile apps with web technologies like HTML, CSS, and JavaScript.",
-      image: "assets/img/ica-slidebox-img-2.png",
+      depoimento: "<b>Ionic Framework</b> is an open source SDK that enables developers to build high quality mobile apps with web technologies like HTML, CSS, and JavaScript.",
+      imgAvt: "assets/img/ica-slidebox-img-2.png",
     },
     {
       titulo: "What is Ionic Cloud?",
-      description: "The <b>Ionic Cloud</b> is a cloud platform for managing and scaling Ionic apps with integrated services like push notifications, native builds, user auth, and live updating.",
-      image: "assets/img/ica-slidebox-img-3.png",
+      depoimento: "The <b>Ionic Cloud</b> is a cloud platform for managing and scaling Ionic apps with integrated services like push notifications, native builds, user auth, and live updating.",
+      imgAvt: "assets/img/ica-slidebox-img-3.png",
     },
     {
       titulo: "Danzinws",
-      description: "The <b>Ionic Cloud</b> is a cloud platform for managing and scaling Ionic apps with integrated services like push notifications, native builds, user auth, and live updating.",
-      image: "assets/img/ica-slidebox-img-3.png",
+      depoimento: "The <b>Ionic Cloud</b> is a cloud platform for managing and scaling Ionic apps with integrated services like push notifications, native builds, user auth, and live updating.",
+      imgAvt: "assets/img/ica-slidebox-img-3.png",
     }
   ];
   constructor() { }
