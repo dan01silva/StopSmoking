@@ -1,9 +1,29 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>depoimentos</ion-title>
+    <ion-title>Depoimentos</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
-</ion-content>
+  <ion-content class="depoimentos-page">
+    <ion-slides pager>
+      <ion-slide *ngFor="let slide of slides">
+        <ion-content>
+        <ion-icon name="person-outline" class="icone"></ion-icon>
+        <h5 [innerHTML]="slide.titulo" class="slide-title"></h5>
+        <i [innerHTML]="slide.data" ></i>
+        <p [innerHTML]="slide.depoimento"></p>
+      </ion-content>
+      </ion-slide>
+      <ion-slide>
+        <ion-toolbar>
+        </ion-toolbar>
+        <img
+          src="https://images.pexels.com/photos/4377229/pexels-photo-4377229.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"/>
+        <h3 class="slide-titulo">Abandone velhos hábitos!</h3>
+        
+        <ion-button [href]="homepage" expand="block" fill="clear" shape="round">
+            <p>Voltar para Pagina Home</p>
+          </ion-button>
+      </ion-slide>
+    </ion-slides>
+  </ion-content>
