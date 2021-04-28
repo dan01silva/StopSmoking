@@ -34,7 +34,11 @@ const routes: Routes = [
   {
     path: 'dicas-saude',
     loadChildren: () => import('./dicas-saude/dicas-saude.module').then( m => m.DicasSaudePageModule)
+  },  {
+    path: 'conquistas',
+    loadChildren: () => import('./conquistas/conquistas.module').then( m => m.ConquistasPageModule)
   },
+
 ];
 
 @NgModule({
