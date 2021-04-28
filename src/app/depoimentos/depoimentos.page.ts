@@ -23,12 +23,37 @@ export class DepoimentosPage implements OnInit {
       titulo: "Leonardo Ferreira Gulpz",
       data: "11/06/2021",
       depoimento: "The Ionic Component Documentation showcases a number of useful components that are included out of the box with Ionic.",
+    },
+    {
+      titulo: "Leonardo Ferreira Gulpz",
+      data: "11/06/2021",
+      depoimento: "The Ionic Component Documentation showcases a number of useful components that are included out of the box with Ionic.",
     },  
+    {
+      titulo: "Leonardo Ferreira Gulpz",
+      data: "11/06/2021",
+      depoimento: "The Ionic Component Documentation showcases a number of useful components that are included out of the box with Ionic.",
+    },
+    {
+      titulo: "Leonardo Ferreira Gulpz",
+      data: "11/06/2021",
+      depoimento: "The Ionic Component Documentation showcases a number of useful components that are included out of the box with Ionic.",
+    },
+    {
+      titulo: "Leonardo Ferreira Gulpz",
+      data: "11/06/2021",
+      depoimento: "The Ionic Component Documentation showcases a number of useful components that are included out of the box with Ionic.",
+    },
+    {
+      titulo: "Leonardo Ferreira Gulpz",
+      data: "11/06/2021",
+      depoimento: "The Ionic Component Documentation showcases a number of useful components that are included out of the box with Ionic.",
+    },
   ]   
   
   constructor() { }
 
-  public homepage = "http://localhost:8100/home"
+  public homepage = "http://localhost:8100/home-perfil"
   ngOnInit() {
   }
 }
