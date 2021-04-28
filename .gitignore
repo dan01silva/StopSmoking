@@ -29,3 +29,9 @@ npm-debug.log*
 /platforms
 /plugins
 /www
+<<<<<<< HEAD
+=======
+package.json
+package.json
+>>>>>>> development
+node_modules.7z
