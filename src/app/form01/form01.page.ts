@@ -1,17 +1,21 @@
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-form01',
   templateUrl: './form01.page.html',
   styleUrls: ['./form01.page.scss'],
 })
 export class Form01Page implements OnInit {
-  public idadeuser;
+  public dataNasc;
   public genuser;
   public cityuser;
 
+  public today = new Date();
+  public year = this.today.getFullYear();
+
   public user = {
-    nome: ' ',
+    cidade: '',
+    dataNasc: '',
+    genero: '',
   };
 
   constructor() { }
@@ -20,18 +24,16 @@ export class Form01Page implements OnInit {
   }
 
   public saveidade() {
-    this.user.nome = this.idadeuser;
+    this.user.dataNasc = this.dataNasc;
   }
   public savegen() {
-    this.user.nome = this.genuser;
+    this.user.genero = this.genuser;
   }
   public savecity() {
-    this.user.nome = this.cityuser;
+    this.user.cidade = this.cityuser;
   }
-  
-
-  logForm() {
-    this.user
+  public printLog() {
+    console.log(this.user);
   }
 
 }

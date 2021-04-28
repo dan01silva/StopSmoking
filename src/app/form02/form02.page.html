@@ -10,20 +10,25 @@
     <form class="ion-padding" color="tertiary">
       <ion-item spellcheck="true" class="ion-padding-top">
         <ion-label fl></ion-label>
-        <ion-input placeholder="Quantos cigarros você fuma por dia?" type="text" [(ngModel)]="qntdcig" name="qntdcig"></ion-input>
+        <ion-input placeholder="Quantos cigarros você fuma por dia?" type="text" [(ngModel)]="qtdcigarros" name="qntdcig"></ion-input>
       </ion-item>
       <ion-item spellcheck="true" class="ion-padding-top">
         <ion-label f2></ion-label>
-        <ion-input placeholder="Qual o valor do seu maço de cigarro?" type="text" [(ngModel)]="valcig" name="valcig"></ion-input>
+        <ion-input placeholder="Qual o valor do seu maço de cigarro?" type="text" [(ngModel)]="valorcig" name="valcig"></ion-input>
       </ion-item>
       <ion-item spellcheck="true" class="ion-padding-top">
         <ion-label f3></ion-label>
         <ion-input placeholder="Quantos cigarros vem no maço?" type="text" [(ngModel)]="qntdcigma" name="qntdcigma"></ion-input>
       </ion-item>
       <!-- vai ter um href nesse btn -->
-      <div id="btnhome">
-        <ion-button href="http://localhost:8100/home-perfil" shape="round"block>Continuar</ion-button>
+      <div id="btnform">
+        <ion-button routerLink="/homeperfil" (click)="printLog()" shape="round"block>Continuar</ion-button>
       </div>
     </form>
   </div>
+  <div id="btnback">
+      <ion-button shape="round" expand="block" href="http://localhost:8100/form01" outline>
+        VOLTAR
+      </ion-button>
+    </div>
 </ion-content>

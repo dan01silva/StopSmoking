@@ -10,8 +10,9 @@
     <form class="ion-padding" color="tertiary">
       <ion-item spellcheck="true" class="ion-padding-top">
         <ion-label color="medium">Data de nascimento</ion-label>
-        <ion-input placeholder="Insira sua data de nascimento" type="date" min="1920-01-01" max="2021-01-01" [(ngModel)]="idadeuser" name="idade"></ion-input>
-        </ion-item>
+        <ion-input value="2003-01-" type="date" min="1920-01-01" max="2021-01-01"
+          [(ngModel)]="dataNasc" name="idade"></ion-input>
+      </ion-item>
 
       <ion-item spellcheck="true" class="ion-padding-top">
         <ion-label color="medium">Insira seu gênero</ion-label>
@@ -54,8 +55,16 @@
         </ion-select>
       </ion-item>
     </form>
-    <div id="btnhome">
-      <ion-button href="http://localhost:8100/form02"  shape="round"outline>Continuar</ion-button>
-    </div> 
+    <div id="btnform">
+      <ion-button routerLink="/form02" (click)="saveidade()" (click)="savegen()" (click)="savecity()" (click)="printLog()" clik shape="round" outline>Continuar</ion-button>
+    </div>
+   
+    <div id="btnback">
+      <ion-button shape="round" expand="block" href="http://localhost:8100/bemvindo" outline>
+        VOLTAR
+      </ion-button>
+    </div>
+
   </div>
+
 </ion-content>

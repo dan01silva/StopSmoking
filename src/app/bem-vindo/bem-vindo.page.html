@@ -1,29 +1,31 @@
-<ion-content class="ion-padding" color="medium">
-  <ion-card color="light" class="ion-padding">
-    <ion-row class="ion-align-self-center">
-      <h3 class="titulopage">Bem vindo ao Stop Smoking</h3>
-    </ion-row>
+<body background="https://hhp-blog.s3.amazonaws.com/2016/07/smoking-cessation-blog.jpg"> 
+  
+
+<ion-content  padding class="background" [fullscreen]="true">
+
+  <ion-card color="light">
+    <ion-grid>
+      <ion-row class="ion-margin-horizontal">
+        <h3> Bem vindo ao Stop Smoking </h3>
+      </ion-row>
+    </ion-grid>
+    <ion-skeleton-text animated style="width: 100%"></ion-skeleton-text>
   </ion-card>
 
 
-  
-    <div id="inputname">
-      <ion-card>
-        <form>
-          <ion-item class="">
-            <ion-input placeholder="Insira seu nome" type="text" [name]="nomeuser"></ion-input>
-          </ion-item>
-        </form>
-      </ion-card>
-    </div>
-  
-    
-
-  <div id="btnhome"> 
-    <ion-button href="http://localhost:8100/form01" ion-button expand="block" shape="round" round>
-      CONTINUAR
-      </ion-button>
-    
+  <div id="inputname">
+    <ion-card>
+        <ion-item class="">
+          <ion-input placeholder="Insira seu nome"  type="text" [(ngModel)]="nomeuser"></ion-input>
+        </ion-item>
+    </ion-card>
   </div>
-</ion-content>
 
+  <div id="btnform">
+    <ion-button routerLink="/form01" (click)="savename()"  expand="block" round>
+      CONTINUAR
+    </ion-button>
+  </div>
+  
+</ion-content>
+</body>

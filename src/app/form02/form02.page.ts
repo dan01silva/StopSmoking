@@ -6,12 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./form02.page.scss'],
 })
 export class Form02Page implements OnInit {
-  public qntdcig;
-  public valcig;
+  public qtdcigarros;
+  public valorcig;
   public qntdcigma;
 
   public user = {
-    nome: ' ',
+    qtdcigarros: ' ',
+    valorcig: '',
+    qntdcqntdcigarrogmaacoigma: '',
   };
 
   constructor() { }
@@ -20,18 +22,15 @@ export class Form02Page implements OnInit {
   }
 
   public savecig() {
-    this.user.nome = this.qntdcig;
+    this.user.qtdcigarros = this.qtdcigarros;
   }
   public savevalcig() {
-    this.user.nome = this.valcig;
+    this.user.valorcig = this.valorcig;
   }
   public saveqntdcig() {
-    this.user.nome = this.qntdcigma;
+    this.user.qntdcqntdcigarrogmaacoigma = this.qntdcigma;
   }
-
-
-  logForm() {
-    this.user
+  public printLog() {
+    console.log(this.user);
   }
-
 }

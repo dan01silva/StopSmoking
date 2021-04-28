@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { empty } from 'rxjs';
+import { NgModule } from '@angular/core';
 
 @Component({
   selector: 'app-bem-vindo',
@@ -7,22 +8,17 @@ import { empty } from 'rxjs';
   styleUrls: ['./bem-vindo.page.scss'],
 })
 export class BemVindoPage implements OnInit {
-  public nomeuser;
+  public nomeuser = '';
 
-  public user = {
-    nome: ' ',
-  };
-
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }
 
   public savename() {
-    this.user.nome = this.nomeuser;
+    this.nomeuser = this.nomeuser;
+    console.log(this.nomeuser);
   }
 
-  logForm() {
-    this.user
-  }
 }

@@ -3,12 +3,8 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
-  },
-  {
     path: '',
-    redirectTo: 'form01',
+    redirectTo: 'bemvindo',
     pathMatch: 'full'
   },
   {
@@ -20,11 +16,11 @@ const routes: Routes = [
     loadChildren: () => import('./form02/form02.module').then( m => m.Form02PageModule)
   },
   {
-    path: 'home-perfil',
+    path: 'homeperfil',
     loadChildren: () => import('./home-perfil/home-perfil.module').then( m => m.HomePerfilPageModule)
   },
   {
-    path: 'bem-vindo',
+    path: 'bemvindo',
     loadChildren: () => import('./bem-vindo/bem-vindo.module').then( m => m.BemVindoPageModule)
   },
   {
@@ -34,7 +30,8 @@ const routes: Routes = [
   {
     path: 'dicas-saude',
     loadChildren: () => import('./dicas-saude/dicas-saude.module').then( m => m.DicasSaudePageModule)
-  },  {
+  },
+  {
     path: 'conquistas',
     loadChildren: () => import('./conquistas/conquistas.module').then( m => m.ConquistasPageModule)
   },

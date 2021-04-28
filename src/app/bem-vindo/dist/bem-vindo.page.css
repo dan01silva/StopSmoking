@@ -1,0 +1,13 @@
+#inputname {
+  position: fixed;
+  top: 35%;
+  left: 20%;
+  align-content: auto;
+  size: auto;
+}
+
+#img {
+  width: 100%;
+  height: auto;
+  opacity: 0.3;
+}
