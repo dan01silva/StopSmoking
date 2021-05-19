@@ -9,6 +9,10 @@ export class DicasSaudePage implements OnInit {
 
   constructor() { }
 
+  option = {
+    loop: true,
+  }
+
   ngOnInit() {
   }
 
