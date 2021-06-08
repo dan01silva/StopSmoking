@@ -1,4 +1,6 @@
+import { ReturnStatement } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
+import { DateService } from '../services/date.service';
 
 @Component({
   selector: 'app-form02',
@@ -7,28 +9,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Form02Page implements OnInit {
   public qtdcigarros;
-  public valorcig;
-  public qntdcigma;
+  public valorMacoCig;
+  public qntdcigmaco;
 
-  public user = {
-    qtdcigarros: ' ',
-    valorcig: '',
-    qntdcqntdcigarrogmaacoigma: '',
-  };
+  public user;
 
-  constructor() { }
+  constructor(private service: DateService) {
+    this.user = this.service.user;
+  }
 
   ngOnInit() {
   }
 
   public savecig() {
-    this.user.qtdcigarros = this.qtdcigarros;
-  }
-  public savevalcig() {
-    this.user.valorcig = this.valorcig;
-  }
-  public saveqntdcig() {
-    this.user.qntdcqntdcigarrogmaacoigma = this.qntdcigma;
+    if (this.qtdcigarros || this.valorMacoCig || this.qntdcigmaco == null) {
+      return;
+    } else {
+      this.user.qtdCigarrosPdia = this.qtdcigarros;
+      this.user.valorMaco = this.valorMacoCig;
+      this.user.qtdCigarrosPmaco = this.qntdcigmaco;
+    }
   }
   public printLog() {
     console.log(this.user);

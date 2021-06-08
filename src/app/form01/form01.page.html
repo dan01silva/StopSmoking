@@ -1,64 +1,65 @@
-<ion-content class="ion-padding" color="Warning">
+<ion-content class="ion-padding">
 
   <ion-card color="light" class="ion-padding">
     <ion-row class="ion-align-self-center">
-      <h3 class="tituloH3">Precisamos que você insira algumas informações abaixo.</h3>
+      <h4 class="tituloH3"> Olá <b>{{user.name}}</b> <br> Precisamos que você insira algumas informações abaixo.</h4>
     </ion-row>
   </ion-card>
 
-  <div class="form">
-    <form class="ion-padding" color="tertiary">
-      <ion-item spellcheck="true" class="ion-padding-top">
-        <ion-label color="medium">Data de nascimento</ion-label>
-        <ion-input value="2003-01-" type="date" min="1920-01-01" max="2021-01-01"
-          [(ngModel)]="dataNasc" name="idade"></ion-input>
-      </ion-item>
+  <div>
+    <ion-item spellcheck="true" class="ion-padding-top">
+      <ion-label position="floating" color="medium" value="dd/mm/yyyy">Data de nascimento</ion-label>
+      <ion-input required pattern="[0-9]{2}-[0-9]{2}-[0-9]{4}" [(ngModel)]="dataNasc"></ion-input>
+    </ion-item>
 
-      <ion-item spellcheck="true" class="ion-padding-top">
-        <ion-label color="medium">Insira seu gênero</ion-label>
-        <ion-select value="brown" okText="Continuar" cancelText="Desfazer">
-          <ion-select-option value="F">Feminino</ion-select-option>
-          <ion-select-option value="M">Masculino</ion-select-option>
-          <ion-select-option value="NaoAplica">Não se aplica</ion-select-option>
-        </ion-select>
-      </ion-item>
+    <ion-item spellcheck="true" class="ion-padding-top">
+      <ion-label color="medium">Insira seu gênero</ion-label>
+      <ion-select id="genuser" [(ngModel)]="genuser" okText="Continuar" cancelText="Desfazer">
+        <ion-select-option value="Feminino">Feminino</ion-select-option>
+        <ion-select-option value="Masculino">Masculino</ion-select-option>
+        <ion-select-option value="NaoAplica">Não se aplica</ion-select-option>
+      </ion-select>
+    </ion-item>
 
 
-      <ion-item spellcheck="true" class="ion-padding-top">
-        <ion-label color="medium">Insira seu estado</ion-label>
-        <ion-select value="brown" okText="Continuar" cancelText="Desfazer">
-          <ion-select-option value="Aracaju">AC</ion-select-option>
-          <ion-select-option value="Belem">AL</ion-select-option>
-          <ion-select-option value="BeloHorizone">AP</ion-select-option>
-          <ion-select-option value="BoaVista">AM</ion-select-option>
-          <ion-select-option value="Brasilia">BA</ion-select-option>
-          <ion-select-option value="CampoGrande">CE</ion-select-option>
-          <ion-select-option value="Cuiaba">ES</ion-select-option>
-          <ion-select-option value="Curitiba">GO</ion-select-option>
-          <ion-select-option value="Florianopolis">MA</ion-select-option>
-          <ion-select-option value="Fortaleza">MT</ion-select-option>
-          <ion-select-option value="Goiania">MS</ion-select-option>
-          <ion-select-option value="JoaoPessoa">MG</ion-select-option>
-          <ion-select-option value="Macapa">PA</ion-select-option>
-          <ion-select-option value="Manaus">PB</ion-select-option>
-          <ion-select-option value="Natal">PR</ion-select-option>
-          <ion-select-option value="Palmas">PE</ion-select-option>
-          <ion-select-option value="PortoAlegre">PI</ion-select-option>
-          <ion-select-option value="PortoVelho">RJ</ion-select-option>
-          <ion-select-option value="Recife">RS</ion-select-option>
-          <ion-select-option value="RioBranco">RO</ion-select-option>
-          <ion-select-option value="Salvador">SC</ion-select-option>
-          <ion-select-option value="SaoLuis">SP</ion-select-option>
-          <ion-select-option value="SaoPaulo">SE</ion-select-option>
-          <ion-select-option value="Teresina">TO</ion-select-option>
-          <ion-select-option value="Vitoria">DF</ion-select-option>
-        </ion-select>
-      </ion-item>
-    </form>
+    <ion-item spellcheck="true" class="ion-padding-top">
+      <ion-label color="medium">Insira seu estado</ion-label>
+      <ion-select id="cityuser" [(ngModel)]="cityuser" okText="Continuar" cancelText="Desfazer">
+        <ion-select-option value="Acre">AC</ion-select-option>
+        <ion-select-option value="Alagoas">AL</ion-select-option>
+        <ion-select-option value="Amapá">AP</ion-select-option>
+        <ion-select-option value="Amazonas">AM</ion-select-option>
+        <ion-select-option value="Bahia">BA</ion-select-option>
+        <ion-select-option value="Ceará">CE</ion-select-option>
+        <ion-select-option value="Espírito Santo">ES</ion-select-option>
+        <ion-select-option value="Goiás">GO</ion-select-option>
+        <ion-select-option value="Maranhão">MA</ion-select-option>
+        <ion-select-option value="Mato Grosso">MT</ion-select-option>
+        <ion-select-option value="Mato Grosso do Sul">MS</ion-select-option>
+        <ion-select-option value="Minas Gerais">MG</ion-select-option>
+        <ion-select-option value="Para">PA</ion-select-option>
+        <ion-select-option value="Paraiba">PB</ion-select-option>
+        <ion-select-option value="Parana">PR</ion-select-option>
+        <ion-select-option value="Pernambuco">PE</ion-select-option>
+        <ion-select-option value="Piauí">PI</ion-select-option>
+        <ion-select-option value="Rio de Janeiro">RJ</ion-select-option>
+        <ion-select-option value="Rio Grande do Norte">RN</ion-select-option>
+        <ion-select-option value="Rio Grande do Sul">RS</ion-select-option>
+        <ion-select-option value="Roraima">RR</ion-select-option>
+        <ion-select-option value="Santa Catarina">SC</ion-select-option>
+        <ion-select-option value="São Paulo">SP</ion-select-option>
+        <ion-select-option value="Sergipe">SE</ion-select-option>
+        <ion-select-option value="Tocantins">TO</ion-select-option>
+        <ion-select-option value="Distrito Federal">DF</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+
     <div id="btnform">
-      <ion-button routerLink="/form02" (click)="saveidade()" (click)="savegen()" (click)="savecity()" (click)="printLog()" clik shape="round" outline>Continuar</ion-button>
+      <ion-button routerLink="/form02" (click)="saveForm01()" (click)="printLog()" shape="round">Continuar
+      </ion-button>
     </div>
-   
+
     <div id="btnback">
       <ion-button shape="round" expand="block" href="http://localhost:8100/bemvindo" outline>
         VOLTAR

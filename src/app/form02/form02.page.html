@@ -9,16 +9,16 @@
   <div class="form">
     <form class="ion-padding" color="tertiary">
       <ion-item spellcheck="true" class="ion-padding-top">
-        <ion-label fl></ion-label>
-        <ion-input placeholder="Quantos cigarros você fuma por dia?" type="text" [(ngModel)]="qtdcigarros" name="qntdcig"></ion-input>
+        <ion-label fl position="floating">Quantos cigarros você fuma por dia?</ion-label>
+        <ion-input type="text" [(ngModel)]="qtdcigarros" name="qntdcig" required></ion-input>
       </ion-item>
       <ion-item spellcheck="true" class="ion-padding-top">
-        <ion-label f2></ion-label>
-        <ion-input placeholder="Qual o valor do seu maço de cigarro?" type="text" [(ngModel)]="valorcig" name="valcig"></ion-input>
+        <ion-label f2 position="floating">Qual o valor do seu maço de cigarro?</ion-label>
+        <ion-input type="text" [(ngModel)]="valorMacoCig" name="valcig" required></ion-input>
       </ion-item>
       <ion-item spellcheck="true" class="ion-padding-top">
-        <ion-label f3></ion-label>
-        <ion-input placeholder="Quantos cigarros vem no maço?" type="text" [(ngModel)]="qntdcigma" name="qntdcigma"></ion-input>
+        <ion-label f3 position="floating">Quantos cigarros vem no maço?</ion-label>
+        <ion-input type="text" [(ngModel)]="qntdcigmaco" name="qntdcigma" required></ion-input>
       </ion-item>
       <!-- vai ter um href nesse btn -->
       <div id="btnform">

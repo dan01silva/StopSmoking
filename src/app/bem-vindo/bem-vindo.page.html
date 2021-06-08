@@ -1,6 +1,3 @@
-<body background="https://hhp-blog.s3.amazonaws.com/2016/07/smoking-cessation-blog.jpg"> 
-  
-
 <ion-content  padding class="background" [fullscreen]="true">
 
   <ion-card color="light">
@@ -16,16 +13,19 @@
   <div id="inputname">
     <ion-card>
         <ion-item class="">
-          <ion-input placeholder="Insira seu nome"  type="text" [(ngModel)]="nomeuser"></ion-input>
+          <ion-input placeholder="Insira seu nome" type="text" [(ngModel)]="nomeuser" required></ion-input>
         </ion-item>
     </ion-card>
   </div>
 
   <div id="btnform">
-    <ion-button routerLink="/form01" (click)="savename()"  expand="block" round>
+    <!-- <ion-button (click)="validation()" expand="block" shape="round">
+      Salvar
+    </ion-button> -->
+
+    <ion-button routerLink="/form01" class="botao1" id="botao1" (click)="savename()" expand="block" shape="round">
       CONTINUAR
     </ion-button>
   </div>
   
 </ion-content>
-</body>

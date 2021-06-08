@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { empty } from 'rxjs';
-import { NgModule } from '@angular/core';
+import { AlertController, NavController } from '@ionic/angular';
+import { DateService } from '../services/date.service';
 
 @Component({
   selector: 'app-bem-vindo',
@@ -8,17 +8,29 @@ import { NgModule } from '@angular/core';
   styleUrls: ['./bem-vindo.page.scss'],
 })
 export class BemVindoPage implements OnInit {
-  public nomeuser = '';
+  public nomeuser;
 
-  constructor() {
+  public user;
+
+  constructor(private service: DateService, private alert: AlertController, private navCtrl: NavController) {
+    this.user = this.service.user;
   }
 
   ngOnInit() {
   }
 
-  public savename() {
-    this.nomeuser = this.nomeuser;
-    console.log(this.nomeuser);
-  }
+  
+  // em implatação
+  // public validation() {
+  //   if (this.nomeuser == '' || this.nomeuser == null) {
+  //     this.service.presentAlert();
+  //   }
+  //   this.savename();
+  // }
 
+  public savename() {
+    this.user.name = this.nomeuser;
+    //mostrando valor armazenado
+    console.log(this.service.user);
+  }
 }

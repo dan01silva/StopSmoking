@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DateService } from '../services/date.service';
 @Component({
   selector: 'app-form01',
   templateUrl: './form01.page.html',
@@ -12,28 +13,23 @@ export class Form01Page implements OnInit {
   public today = new Date();
   public year = this.today.getFullYear();
 
-  public user = {
-    cidade: '',
-    dataNasc: '',
-    genero: '',
-  };
 
-  constructor() { }
+  public user;
+
+  constructor(private service: DateService) { 
+    this.user = this.service.user;
+  }
 
   ngOnInit() {
   }
 
-  public saveidade() {
+  public saveForm01() {
     this.user.dataNasc = this.dataNasc;
-  }
-  public savegen() {
     this.user.genero = this.genuser;
-  }
-  public savecity() {
     this.user.cidade = this.cityuser;
   }
   public printLog() {
-    console.log(this.user);
+    console.log(this.service.user);
   }
 
 }

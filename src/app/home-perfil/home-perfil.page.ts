@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DateService } from '../services/date.service';
 
 @Component({
   selector: 'app-home-perfil',
@@ -6,10 +7,23 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-perfil.page.scss'],
 })
 export class HomePerfilPage implements OnInit {
+  public user;
+  public date = new Date();
 
-  constructor() { }
+  public datahoje() {
+    const dia = this.date.getDate();
+    const mes = this.date.getMonth();
+    const ano = this.date.getFullYear();
 
-  ngOnInit() {
-  }
+    return dia + '/' + (mes + 1) + '/' + ano;
+
+}
+
+constructor(private service: DateService) {
+  this.user = this.service.user;
+}
+
+ngOnInit() {
+}
 
 }
