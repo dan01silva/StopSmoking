@@ -34,11 +34,7 @@ const routes: Routes = [
   {
     path: 'conquistas',
     loadChildren: () => import('./conquistas/conquistas.module').then( m => m.ConquistasPageModule)
-  },  {
-    path: 'creditos',
-    loadChildren: () => import('./creditos/creditos.module').then( m => m.CreditosPageModule)
   },
-
 
 ];
 
