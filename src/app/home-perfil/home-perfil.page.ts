@@ -9,6 +9,8 @@ import { DateService } from '../services/date.service';
 export class HomePerfilPage implements OnInit {
   public user;
   public date = new Date();
+  public cicigevitados = 0;
+  public economia30 = 0;
 
   public datahoje() {
     const dia = this.date.getDate();
@@ -24,6 +26,11 @@ constructor(private service: DateService) {
 }
 
 ngOnInit() {
+}
+
+public economias(){
+  this.cicigevitados = (this.user.qtdCigarrosPdia * 30);
+  this.economia30 = (this.user.valorMaco * 30);
 }
 
 }
