@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component, NgModule, OnInit } from '@angular/core'
 import * as $ from "jquery";
 
 @Component({
@@ -6,6 +6,7 @@ import * as $ from "jquery";
   templateUrl: './creditos.page.html',
   styleUrls: ['./creditos.page.scss'],
 })
+export class CreditosPageModule {}
 export class CreditosPage implements OnInit {
 
   constructor() { }
