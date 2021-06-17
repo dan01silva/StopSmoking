@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { Form01PageRoutingModule } from './form01-routing.module';
 
 import { Form01Page } from './form01.page';
-
+import * as $ from "jquery";
 @NgModule({
   imports: [
     CommonModule,

@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { CreditosPageRoutingModule } from './creditos-routing.module';
 
 import { CreditosPage } from './creditos.page';
+import * as $ from "jquery";
 
 @NgModule({
   imports: [

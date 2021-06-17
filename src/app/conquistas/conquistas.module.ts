@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { ConquistasPageRoutingModule } from './conquistas-routing.module';
 
 import { ConquistasPage } from './conquistas.page';
+import * as $ from "jquery";
 
 @NgModule({
   imports: [

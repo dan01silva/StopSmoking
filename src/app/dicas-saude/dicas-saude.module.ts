@@ -7,7 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { DicasSaudePageRoutingModule } from './dicas-saude-routing.module';
 
 import { DicasSaudePage } from './dicas-saude.page';
-
+import * as $ from "jquery";
 @NgModule({
   imports: [
     CommonModule,
