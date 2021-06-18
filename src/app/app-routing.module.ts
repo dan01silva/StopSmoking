@@ -42,6 +42,10 @@ const routes: Routes = [
     path: 'extras',
     loadChildren: () => import('./extras/extras.module').then( m => m.ExtrasPageModule)
   },
+  {
+    path: 'bonus',
+    loadChildren: () => import('./bonus/bonus.module').then( m => m.BonusPageModule)
+  },
 
 
 ];
