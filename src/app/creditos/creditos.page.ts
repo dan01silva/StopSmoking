@@ -6,7 +6,7 @@ import * as $ from "jquery";
   templateUrl: './creditos.page.html',
   styleUrls: ['./creditos.page.scss'],
 })
-export class CreditosPageModule {}
+
 export class CreditosPage implements OnInit {
 
   constructor() { }
@@ -65,3 +65,9 @@ export class CreditosPage implements OnInit {
   }
 
 }
+    
+    
+  
+  
+
+
