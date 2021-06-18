@@ -38,6 +38,10 @@ const routes: Routes = [
     path: 'creditos',
     loadChildren: () => import('./creditos/creditos.module').then( m => m.CreditosPageModule)
   },
+  {
+    path: 'extras',
+    loadChildren: () => import('./extras/extras.module').then( m => m.ExtrasPageModule)
+  },
 
 
 ];
