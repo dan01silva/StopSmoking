@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Plugins } from '@capacitor/core';
-import { ScreenReader } from '@capacitor/screen-reader';
+
 
 @Component({
   selector: 'app-bonus',
@@ -24,3 +24,5 @@ console.log(info);
 };
 
   }
+
+  
