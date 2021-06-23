@@ -34,7 +34,19 @@ const routes: Routes = [
   {
     path: 'conquistas',
     loadChildren: () => import('./conquistas/conquistas.module').then( m => m.ConquistasPageModule)
+  },  {
+    path: 'creditos',
+    loadChildren: () => import('./creditos/creditos.module').then( m => m.CreditosPageModule)
   },
+  {
+    path: 'extras',
+    loadChildren: () => import('./extras/extras.module').then( m => m.ExtrasPageModule)
+  },
+  {
+    path: 'bonus',
+    loadChildren: () => import('./bonus/bonus.module').then( m => m.BonusPageModule)
+  },
+
 
 ];
 

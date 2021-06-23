@@ -3,19 +3,19 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
+
+import { CreditosPageRoutingModule } from './creditos-routing.module';
+
+import { CreditosPage } from './creditos.page';
 import * as $ from "jquery";
-
-import { BemVindoPageRoutingModule } from './bem-vindo-routing.module';
-
-import { BemVindoPage } from './bem-vindo.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    BemVindoPageRoutingModule
+    CreditosPageRoutingModule
   ],
-  declarations: [BemVindoPage]
+  declarations: [CreditosPage]
 })
-export class BemVindoPageModule {}
+export class CreditosPageModule {}

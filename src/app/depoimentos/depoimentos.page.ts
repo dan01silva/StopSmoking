@@ -1,11 +1,15 @@
 import { Component, OnInit } from '@angular/core';
+import { ScreenReader } from '@capacitor/screen-reader';
+
 
 @Component({
   selector: 'app-depoimentos',
   templateUrl: './depoimentos.page.html',
   styleUrls: ['./depoimentos.page.scss'],
 })
+
 export class DepoimentosPage implements OnInit {
+  
 
   slides = [
     {
@@ -54,6 +58,6 @@ export class DepoimentosPage implements OnInit {
   constructor() { }
 
   public homepage = "http://localhost:8100/home-perfil"
-  ngOnInit() {
+  ngOnInit() {}
   }
-}
+
