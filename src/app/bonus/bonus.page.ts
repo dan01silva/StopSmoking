@@ -18,7 +18,7 @@ const { Device } = Plugins;
 
 const info = await Device.getInfo();
 console.log(info);
-
+document.querySelector('.info').innerHTML = 'info';
 
 
 };
